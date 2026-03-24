@@ -1,12 +1,11 @@
-# 1. Set the minimum CMake version
 cmake_minimum_required(VERSION 3.10)
 
-# 2. Name your project
+# Name of your project
 project(HashMap_Implementation)
 
-# 3. Specify the C++ standard (matches your intellisense JSON)
+# Specify the C++ standard
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# 4. Create the executable using your .cpp file
-add_executable(HashMap_Implementation hashMap.cpp)
+# Create the executable from main.cpp and hashMap.cpp
+add_executable(HashMap_Implementation main.cpp hashMap.cpp)
